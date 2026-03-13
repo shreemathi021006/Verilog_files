@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="185.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="282.701 ns"></ZoomEndTime>
+      <Cursor1Time time="185.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="73"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb/hclk" type="logic">
+      <obj_property name="ElementShortName">hclk</obj_property>
+      <obj_property name="ObjectShortName">hclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/hresetn" type="logic">
+      <obj_property name="ElementShortName">hresetn</obj_property>
+      <obj_property name="ObjectShortName">hresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/hwrite" type="logic">
+      <obj_property name="ElementShortName">hwrite</obj_property>
+      <obj_property name="ObjectShortName">hwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/htrans" type="array">
+      <obj_property name="ElementShortName">htrans[1:0]</obj_property>
+      <obj_property name="ObjectShortName">htrans[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/hreadyin" type="logic">
+      <obj_property name="ElementShortName">hreadyin</obj_property>
+      <obj_property name="ObjectShortName">hreadyin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/haddr" type="array">
+      <obj_property name="ElementShortName">haddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">haddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/hwdata" type="array">
+      <obj_property name="ElementShortName">hwdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hwdata[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pwrite" type="logic">
+      <obj_property name="ElementShortName">pwrite</obj_property>
+      <obj_property name="ObjectShortName">pwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/penable" type="logic">
+      <obj_property name="ElementShortName">penable</obj_property>
+      <obj_property name="ObjectShortName">penable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/psel" type="array">
+      <obj_property name="ElementShortName">psel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">psel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/paddr" type="array">
+      <obj_property name="ElementShortName">paddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">paddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pwdata" type="array">
+      <obj_property name="ElementShortName">pwdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pwdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/hreadyout" type="logic">
+      <obj_property name="ElementShortName">hreadyout</obj_property>
+      <obj_property name="ObjectShortName">hreadyout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>
