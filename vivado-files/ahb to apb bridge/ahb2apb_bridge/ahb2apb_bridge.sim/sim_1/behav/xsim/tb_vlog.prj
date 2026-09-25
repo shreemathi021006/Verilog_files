@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../vivado/2025.2/Vivado/data/rsb/busdef" \
+"../../../../ahb2apb_bridge.srcs/sources_1/new/AHB_slave_interface.v" \
+"../../../../ahb2apb_bridge.srcs/sources_1/new/APB_controller.v" \
+"../../../../ahb2apb_bridge.srcs/sources_1/new/Top.v" \
+"../../../../ahb2apb_bridge.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

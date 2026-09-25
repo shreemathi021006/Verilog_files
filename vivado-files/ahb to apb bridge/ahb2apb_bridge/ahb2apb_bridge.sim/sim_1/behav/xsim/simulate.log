@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+$finish called at time : 185 ns : File "C:/maven/ahb2apb_bridge/ahb2apb_bridge.srcs/sim_1/new/tb.v" Line 141
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.
