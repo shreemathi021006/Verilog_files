@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sun Jun 14 01:29:07 2026
+[*]
+[dumpfile] "C:\icarus_files\gcd\tb.vcd"
+[dumpfile_mtime] "Sun Jun 14 01:26:04 2026"
+[dumpfile_size] 4935
+[savefile] "C:\icarus_files\gcd\waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-16.565107 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 197
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+tb.clk
+tb.start
+@22
+tb.data_in[7:0]
+tb.dp.a[7:0]
+@23
+tb.dp.b[7:0]
+@28
+tb.lda
+tb.ldb
+tb.sel_a
+tb.sel_b
+tb.sel_in
+tb.gt
+tb.lt
+tb.eq
+tb.finish
+[pattern_trace] 1
+[pattern_trace] 0

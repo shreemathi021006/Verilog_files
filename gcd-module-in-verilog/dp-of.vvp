@@ -1,0 +1,162 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-965-g55e06db6)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\IVERIL~1\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\IVERIL~1\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\IVERIL~1\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\IVERIL~1\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\IVERIL~1\iverilog\lib\ivl\va_math.vpi";
+S_000000000119e590 .scope module, "data_path" "data_path" 2 3;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "lda";
+    .port_info 2 /INPUT 1 "ldb";
+    .port_info 3 /INPUT 1 "sel_a";
+    .port_info 4 /INPUT 1 "sel_b";
+    .port_info 5 /INPUT 1 "sel_in";
+    .port_info 6 /OUTPUT 1 "gt";
+    .port_info 7 /OUTPUT 1 "eq";
+    .port_info 8 /OUTPUT 1 "lt";
+    .port_info 9 /INPUT 8 "data_in";
+v0000000001239bb0_0 .net "a", 7 0, v00000000012394d0_0;  1 drivers
+v0000000001239930_0 .net "b", 7 0, v00000000012396b0_0;  1 drivers
+v0000000001239070_0 .net "bus", 7 0, L_000000000123b950;  1 drivers
+o00000000011f0528 .functor BUFZ 1, C4<z>; HiZ drive
+v0000000001239250_0 .net "clk", 0 0, o00000000011f0528;  0 drivers
+v0000000001239110_0 .net "cout", 7 0, v0000000001239f70_0;  1 drivers
+o00000000011f0408 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v000000000123b130_0 .net "data_in", 7 0, o00000000011f0408;  0 drivers
+v000000000123cdf0_0 .net "eq", 0 0, L_000000000123bc70;  1 drivers
+v000000000123b590_0 .net "gt", 0 0, L_000000000123c350;  1 drivers
+o00000000011f0558 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000123b1d0_0 .net "lda", 0 0, o00000000011f0558;  0 drivers
+o00000000011f0648 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000123bb30_0 .net "ldb", 0 0, o00000000011f0648;  0 drivers
+v000000000123cad0_0 .net "lt", 0 0, L_000000000123b630;  1 drivers
+v000000000123c710_0 .net "ma", 7 0, L_000000000123c170;  1 drivers
+v000000000123b3b0_0 .net "mb", 7 0, L_000000000123c850;  1 drivers
+o00000000011f0168 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000123b8b0_0 .net "sel_a", 0 0, o00000000011f0168;  0 drivers
+o00000000011f0288 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000123bd10_0 .net "sel_b", 0 0, o00000000011f0288;  0 drivers
+o00000000011f03a8 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000123b090_0 .net "sel_in", 0 0, o00000000011f03a8;  0 drivers
+S_000000000119e7d0 .scope module, "c" "comp" 2 12, 3 3 0, S_000000000119e590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 1 "lt";
+    .port_info 3 /OUTPUT 1 "gt";
+    .port_info 4 /OUTPUT 1 "eq";
+v00000000011b3380_0 .net "eq", 0 0, L_000000000123bc70;  alias, 1 drivers
+v00000000011e8f30_0 .net "gt", 0 0, L_000000000123c350;  alias, 1 drivers
+v00000000011e5e70_0 .net "lt", 0 0, L_000000000123b630;  alias, 1 drivers
+v000000000119e960_0 .net "x", 7 0, v00000000012394d0_0;  alias, 1 drivers
+v000000000119ccc0_0 .net "y", 7 0, v00000000012396b0_0;  alias, 1 drivers
+L_000000000123b630 .cmp/gt 8, v00000000012396b0_0, v00000000012394d0_0;
+L_000000000123c350 .cmp/gt 8, v00000000012394d0_0, v00000000012396b0_0;
+L_000000000123bc70 .cmp/eq 8, v00000000012394d0_0, v00000000012396b0_0;
+S_000000000119cd60 .scope module, "ma1" "mux" 2 10, 4 2 0, S_000000000119e590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 8 "z";
+    .port_info 3 /INPUT 1 "sel";
+v000000000119cef0_0 .net "sel", 0 0, o00000000011f0168;  alias, 0 drivers
+v000000000119cf90_0 .net "x", 7 0, v00000000012394d0_0;  alias, 1 drivers
+v000000000119d030_0 .net "y", 7 0, v00000000012396b0_0;  alias, 1 drivers
+v0000000001239c50_0 .net "z", 7 0, L_000000000123c170;  alias, 1 drivers
+L_000000000123c170 .functor MUXZ 8, v00000000012394d0_0, v00000000012396b0_0, o00000000011f0168, C4<>;
+S_00000000011b2ce0 .scope module, "mb1" "mux" 2 11, 4 2 0, S_000000000119e590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 8 "z";
+    .port_info 3 /INPUT 1 "sel";
+v0000000001239a70_0 .net "sel", 0 0, o00000000011f0288;  alias, 0 drivers
+v0000000001239570_0 .net "x", 7 0, v00000000012394d0_0;  alias, 1 drivers
+v00000000012392f0_0 .net "y", 7 0, v00000000012396b0_0;  alias, 1 drivers
+v0000000001239390_0 .net "z", 7 0, L_000000000123c850;  alias, 1 drivers
+L_000000000123c850 .functor MUXZ 8, v00000000012394d0_0, v00000000012396b0_0, o00000000011f0288, C4<>;
+S_00000000011b2e70 .scope module, "mc1" "mux" 2 14, 4 2 0, S_000000000119e590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 8 "z";
+    .port_info 3 /INPUT 1 "sel";
+v0000000001239cf0_0 .net "sel", 0 0, o00000000011f03a8;  alias, 0 drivers
+v0000000001239d90_0 .net "x", 7 0, v0000000001239f70_0;  alias, 1 drivers
+v0000000001239e30_0 .net "y", 7 0, o00000000011f0408;  alias, 0 drivers
+v0000000001239ed0_0 .net "z", 7 0, L_000000000123b950;  alias, 1 drivers
+L_000000000123b950 .functor MUXZ 8, v0000000001239f70_0, o00000000011f0408, o00000000011f03a8, C4<>;
+S_00000000011b3000 .scope module, "p1" "pipo" 2 8, 5 3 0, S_000000000119e590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "load";
+    .port_info 2 /INPUT 8 "x";
+    .port_info 3 /OUTPUT 8 "z";
+v00000000012391b0_0 .net "clk", 0 0, o00000000011f0528;  alias, 0 drivers
+v0000000001239430_0 .net "load", 0 0, o00000000011f0558;  alias, 0 drivers
+v0000000001239890_0 .net "x", 7 0, L_000000000123b950;  alias, 1 drivers
+v00000000012394d0_0 .var "z", 7 0;
+E_00000000011d67a0 .event posedge, v00000000012391b0_0;
+S_00000000011e4b30 .scope module, "p2" "pipo" 2 9, 5 3 0, S_000000000119e590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "load";
+    .port_info 2 /INPUT 8 "x";
+    .port_info 3 /OUTPUT 8 "z";
+v0000000001239610_0 .net "clk", 0 0, o00000000011f0528;  alias, 0 drivers
+v00000000012399d0_0 .net "load", 0 0, o00000000011f0648;  alias, 0 drivers
+v0000000001239b10_0 .net "x", 7 0, L_000000000123b950;  alias, 1 drivers
+v00000000012396b0_0 .var "z", 7 0;
+S_00000000011e4cc0 .scope module, "s" "subt" 2 13, 6 3 0, S_000000000119e590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 8 "z";
+v0000000001239750_0 .net "x", 7 0, L_000000000123c170;  alias, 1 drivers
+v00000000012397f0_0 .net "y", 7 0, L_000000000123c850;  alias, 1 drivers
+v0000000001239f70_0 .var "z", 7 0;
+E_00000000011d5fe0 .event edge, v0000000001239c50_0, v0000000001239390_0;
+    .scope S_00000000011b3000;
+T_0 ;
+    %wait E_00000000011d67a0;
+    %load/vec4 v0000000001239430_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %load/vec4 v0000000001239890_0;
+    %assign/vec4 v00000000012394d0_0, 0;
+T_0.0 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00000000011e4b30;
+T_1 ;
+    %wait E_00000000011d67a0;
+    %load/vec4 v00000000012399d0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %load/vec4 v0000000001239b10_0;
+    %assign/vec4 v00000000012396b0_0, 0;
+T_1.0 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_00000000011e4cc0;
+T_2 ;
+    %wait E_00000000011d5fe0;
+    %load/vec4 v0000000001239750_0;
+    %load/vec4 v00000000012397f0_0;
+    %sub;
+    %store/vec4 v0000000001239f70_0, 0, 8;
+    %jmp T_2;
+    .thread T_2, $push;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "data_path.v";
+    "comp.v";
+    "mux.v";
+    "pipo.v";
+    "sub.v";
