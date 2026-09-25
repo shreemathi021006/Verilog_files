@@ -55,20 +55,4 @@ verification results, a Vivado DRC report, and the architecture write-up.
 - See its own [README](./Ohmegahack-PWM-FaultTolerant/README.md) for the
   full breakdown, simulation instructions, and results
 
-### [`gcd-module-in-verilog/`](./gcd-module-in-verilog)
-A GCD (Greatest Common Divisor) computation module — classic datapath + FSM
-design, simulated with Icarus Verilog and GTKWave.
 
-- **Datapath:** registers A & B, mux, comparator, subtractor
-- **FSM:** 6-state controller (`S0`–`S5`) that loads inputs, compares A and
-  B, subtracts the smaller from the larger, and repeats until A = B
-- Includes the design flowchart, synthesized schematic screenshots, and a
-  saved GTKWave waveform (`waveform.gtkw`)
-
-**Run it:**
-```bash
-cd gcd-module-in-verilog
-iverilog -o tb-of.vvp pipo.v mux.v sub.v comp.v data_path.v fsm.v tb.v
-vvp tb-of.vvp
-gtkwave tb.vcd
-```
