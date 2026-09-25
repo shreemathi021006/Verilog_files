@@ -1,0 +1,2320 @@
+$date
+	Sat Aug 29 16:51:41 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench $end
+$var wire 1 ! b_base $end
+$var wire 1 " b $end
+$var wire 1 # a_base $end
+$var wire 1 $ a $end
+$var reg 1 % clk $end
+$var reg 3 & dead_in [2:0] $end
+$var reg 3 ' on_time [2:0] $end
+$var reg 1 ( rst $end
+$var integer 32 ) layer_pass_count [31:0] $end
+$var integer 32 * overlap_errors [31:0] $end
+$scope module dut $end
+$var wire 1 % clk $end
+$var wire 3 + dead_in [2:0] $end
+$var wire 3 , on_time [2:0] $end
+$var wire 1 ( rst $end
+$var wire 4 - total_dead [3:0] $end
+$var wire 1 . sel_dead_b $end
+$var wire 1 / sel_dead $end
+$var wire 1 0 rstc_b $end
+$var wire 1 1 rstc $end
+$var wire 3 2 reload_val [2:0] $end
+$var wire 1 3 overlap_now $end
+$var wire 1 4 ns_mismatch $end
+$var wire 1 5 new_period_b $end
+$var wire 1 6 new_period $end
+$var wire 3 7 margin_add [2:0] $end
+$var wire 1 8 eq_raw $end
+$var wire 1 9 eq_b $end
+$var wire 1 : eq $end
+$var wire 3 ; dead_time_eff [2:0] $end
+$var wire 1 < dead_mismatch $end
+$var wire 3 = dead_latched [2:0] $end
+$var wire 3 > count_out [2:0] $end
+$var wire 1 ? cnt_mismatch $end
+$var wire 1 @ cnt_b $end
+$var wire 1 A cnt $end
+$var wire 1 B b_raw $end
+$var wire 1 ! b_base $end
+$var wire 1 " b $end
+$var wire 1 C a_raw $end
+$var wire 1 # a_base $end
+$var wire 1 $ a $end
+$var reg 3 D dead_latched_b [2:0] $end
+$scope module c1 $end
+$var wire 1 % clk $end
+$var wire 3 E data [2:0] $end
+$var wire 1 1 rst $end
+$var wire 3 F out [2:0] $end
+$var wire 1 ? cnt_mismatch $end
+$var wire 1 A cnt $end
+$var reg 3 G c0 [2:0] $end
+$var reg 3 H c1 [2:0] $end
+$var reg 3 I c2 [2:0] $end
+$scope module count_voter $end
+$var wire 3 J in0 [2:0] $end
+$var wire 3 K in1 [2:0] $end
+$var wire 3 L in2 [2:0] $end
+$var wire 1 ? mismatch $end
+$var wire 3 M out [2:0] $end
+$upscope $end
+$upscope $end
+$scope module cp $end
+$var wire 1 % clk $end
+$var wire 1 ( rst $end
+$var wire 1 9 eq $end
+$var reg 1 # a $end
+$var reg 1 ! b $end
+$var reg 1 @ cnt $end
+$var reg 1 5 new_period $end
+$var reg 2 N ns [1:0] $end
+$var reg 1 0 rstc $end
+$var reg 1 . sel_dead $end
+$upscope $end
+$scope module ctrl $end
+$var wire 1 % clk $end
+$var wire 1 ( rst $end
+$var wire 2 O ns_voted [1:0] $end
+$var wire 1 4 ns_mismatch $end
+$var wire 1 : eq $end
+$var reg 1 C a $end
+$var reg 1 B b $end
+$var reg 1 A cnt $end
+$var reg 1 6 new_period $end
+$var reg 2 P ns0 [1:0] $end
+$var reg 2 Q ns1 [1:0] $end
+$var reg 2 R ns2 [1:0] $end
+$var reg 2 S ns_next [1:0] $end
+$var reg 1 1 rstc $end
+$var reg 1 / sel_dead $end
+$scope module ns_voter $end
+$var wire 2 T in0 [1:0] $end
+$var wire 2 U in1 [1:0] $end
+$var wire 2 V in2 [1:0] $end
+$var wire 1 4 mismatch $end
+$var wire 2 W out [1:0] $end
+$upscope $end
+$upscope $end
+$scope module dl $end
+$var wire 1 % clk $end
+$var wire 3 X dead_in [2:0] $end
+$var wire 1 6 new_period $end
+$var wire 1 ( rst $end
+$var wire 1 < dead_mismatch $end
+$var wire 3 Y dead_latched [2:0] $end
+$var reg 3 Z d0 [2:0] $end
+$var reg 3 [ d1 [2:0] $end
+$var reg 3 \ d2 [2:0] $end
+$scope module dead_voter $end
+$var wire 3 ] in0 [2:0] $end
+$var wire 3 ^ in1 [2:0] $end
+$var wire 3 _ in2 [2:0] $end
+$var wire 1 < mismatch $end
+$var wire 3 ` out [2:0] $end
+$upscope $end
+$upscope $end
+$scope module dp $end
+$var wire 1 % clk $end
+$var wire 1 @ cnt $end
+$var wire 3 a dead_time [2:0] $end
+$var wire 3 b on_time [2:0] $end
+$var wire 1 0 rst $end
+$var wire 1 . sel_dead $end
+$var wire 3 c reload_val [2:0] $end
+$var wire 3 d inter [2:0] $end
+$var wire 1 9 eq $end
+$scope module c1 $end
+$var wire 1 % clk $end
+$var wire 1 @ cnt $end
+$var wire 3 e data [2:0] $end
+$var wire 1 0 rst $end
+$var reg 3 f out [2:0] $end
+$upscope $end
+$scope module zd $end
+$var wire 3 g data [2:0] $end
+$var wire 1 9 eq $end
+$upscope $end
+$upscope $end
+$scope module gf $end
+$var wire 1 % clk $end
+$var wire 1 : eq_filtered $end
+$var wire 1 ( rst $end
+$var wire 1 8 eq_raw $end
+$var reg 1 h s0 $end
+$var reg 1 i s1 $end
+$var reg 1 j s2 $end
+$upscope $end
+$scope module ov $end
+$var wire 1 C a_in $end
+$var wire 1 $ a_safe $end
+$var wire 1 B b_in $end
+$var wire 1 " b_safe $end
+$var wire 1 k not_overlap $end
+$var wire 1 3 overlap_now $end
+$upscope $end
+$scope module sc $end
+$var wire 1 3 anomaly $end
+$var wire 1 % clk $end
+$var wire 1 6 new_period $end
+$var wire 1 ( rst $end
+$var reg 1 l anomaly_latched $end
+$var reg 4 m bad_streak [3:0] $end
+$var reg 4 n good_streak [3:0] $end
+$var reg 3 o margin_add [2:0] $end
+$upscope $end
+$scope module zd $end
+$var wire 3 p data [2:0] $end
+$var wire 1 8 eq $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx p
+bx o
+bx n
+bx m
+xl
+1k
+xj
+xi
+xh
+bx g
+bx f
+bx e
+bx d
+bx c
+b100 b
+bx a
+bx `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+b10 X
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+bx F
+b100 E
+bx D
+0C
+0B
+0A
+x@
+x?
+bx >
+bx =
+x<
+bx ;
+x:
+x9
+x8
+bx 7
+06
+x5
+x4
+03
+b100 2
+11
+x0
+0/
+x.
+bx -
+b100 ,
+b10 +
+b0 *
+b0 )
+1(
+b100 '
+b10 &
+0%
+0$
+x#
+0"
+x!
+$end
+#5000
+b101 ;
+b101 -
+b0 S
+b0 O
+b0 W
+b101 =
+b101 Y
+b101 `
+08
+b100 >
+b100 F
+b100 M
+b100 p
+0:
+0<
+0?
+04
+b100 c
+b100 e
+b101 \
+b101 _
+b101 [
+b101 ^
+b101 Z
+b101 ]
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+0j
+0i
+0h
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+0l
+b0 7
+b0 o
+b0 n
+b0 m
+05
+0.
+10
+0@
+0!
+0#
+b0 N
+b101 D
+b101 a
+1%
+#10000
+0%
+#15000
+09
+b100 d
+b100 f
+b100 g
+1%
+#20000
+0%
+#25000
+00
+1@
+1#
+1$
+01
+1A
+1C
+0(
+1%
+#30000
+0%
+#35000
+b11 >
+b11 F
+b11 M
+b11 p
+b11 d
+b11 f
+b11 g
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+1%
+#40000
+0%
+#45000
+b10 >
+b10 F
+b10 M
+b10 p
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+b10 d
+b10 f
+b10 g
+1%
+#50000
+0%
+#55000
+b1 >
+b1 F
+b1 M
+b1 p
+b1 d
+b1 f
+b1 g
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+1%
+#60000
+0%
+#65000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+19
+b0 d
+b0 f
+b0 g
+1%
+#70000
+0%
+#75000
+10
+b1 N
+09
+b111 d
+b111 f
+b111 g
+1h
+1%
+#80000
+0%
+#85000
+11
+b1 S
+1:
+b101 c
+b101 e
+1i
+b100 d
+b100 f
+b100 g
+00
+1.
+0#
+1%
+#90000
+0%
+#95000
+b101 2
+b101 E
+0$
+b10 S
+1/
+0C
+b1 O
+b1 W
+08
+b100 >
+b100 F
+b100 M
+b100 p
+b11 d
+b11 f
+b11 g
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+1j
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+1%
+#100000
+0%
+#105000
+b100 2
+b100 E
+1"
+0/
+1B
+b11 S
+06
+b101 >
+b101 F
+b101 M
+b101 p
+b10 O
+b10 W
+b101 I
+b101 L
+b101 H
+b101 K
+b101 G
+b101 J
+0h
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+b10 d
+b10 f
+b10 g
+1%
+#110000
+0%
+#115000
+b101 2
+b101 E
+0"
+01
+1/
+0B
+0:
+b100 >
+b100 F
+b100 M
+b100 p
+b11 O
+b11 W
+b1 d
+b1 f
+b1 g
+b11 R
+b11 V
+b11 Q
+b11 U
+b11 P
+b11 T
+0i
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+1%
+#120000
+0%
+#125000
+b11 >
+b11 F
+b11 M
+b11 p
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+0j
+19
+b0 d
+b0 f
+b0 g
+1%
+#130000
+0%
+#135000
+b10 >
+b10 F
+b10 M
+b10 p
+10
+b10 N
+09
+b111 d
+b111 f
+b111 g
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+1%
+#140000
+0%
+#145000
+b1 >
+b1 F
+b1 M
+b1 p
+b100 c
+b100 e
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+b101 d
+b101 f
+b101 g
+00
+0.
+1!
+1%
+#150000
+0%
+#155000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b100 d
+b100 f
+b100 g
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+1%
+#160000
+0%
+#165000
+1h
+b11 d
+b11 f
+b11 g
+1%
+#170000
+0%
+#175000
+16
+11
+b0 S
+1:
+b10 d
+b10 f
+b10 g
+1i
+1%
+#180000
+0%
+#185000
+b100 2
+b100 E
+1$
+b10 ;
+b1 S
+06
+0/
+1C
+b0 O
+b0 W
+b10 -
+b10 =
+b10 Y
+b10 `
+08
+b101 >
+b101 F
+b101 M
+b101 p
+b10 \
+b10 _
+b10 [
+b10 ^
+b10 Z
+b10 ]
+b101 I
+b101 L
+b101 H
+b101 K
+b101 G
+b101 J
+1j
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+b1 n
+b1 d
+b1 f
+b1 g
+1%
+#190000
+0%
+#195000
+b10 2
+b10 E
+0$
+b10 S
+1/
+0C
+b100 >
+b100 F
+b100 M
+b100 p
+b1 O
+b1 W
+19
+b0 d
+b0 f
+b0 g
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+0h
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+1%
+#200000
+0%
+#205000
+b100 2
+b100 E
+1"
+01
+0/
+1B
+0:
+b10 S
+06
+b10 >
+b10 F
+b10 M
+b10 p
+b10 O
+b10 W
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+0i
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+09
+b111 d
+b111 f
+b111 g
+10
+b11 N
+1%
+#210000
+0%
+#215000
+b1 >
+b1 F
+b1 M
+b1 p
+b101 c
+b101 e
+00
+1.
+0!
+b100 d
+b100 f
+b100 g
+0j
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+1%
+#220000
+0%
+#225000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+b11 d
+b11 f
+b11 g
+b110 2
+b110 E
+b11 &
+b11 +
+b11 X
+b110 '
+b110 ,
+b110 b
+1%
+#230000
+0%
+#235000
+b10 d
+b10 f
+b10 g
+1h
+1%
+#240000
+0%
+#245000
+11
+b11 S
+1:
+1i
+b1 d
+b1 f
+b1 g
+1%
+#250000
+0%
+#255000
+b10 2
+b10 E
+0"
+b0 S
+16
+1/
+0B
+b11 O
+b11 W
+08
+b110 >
+b110 F
+b110 M
+b110 p
+19
+b0 d
+b0 f
+b0 g
+b11 R
+b11 V
+b11 Q
+b11 U
+b11 P
+b11 T
+1j
+b110 I
+b110 L
+b110 H
+b110 K
+b110 G
+b110 J
+1%
+#260000
+0%
+#265000
+b110 2
+b110 E
+1$
+b11 ;
+b1 S
+06
+0/
+1C
+b10 >
+b10 F
+b10 M
+b10 p
+b0 O
+b0 W
+b11 -
+b11 =
+b11 Y
+b11 `
+b11 \
+b11 _
+b11 [
+b11 ^
+b11 Z
+b11 ]
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+0h
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+b10 n
+09
+b111 d
+b111 f
+b111 g
+15
+10
+b0 N
+1%
+#270000
+0%
+#275000
+b11 2
+b11 E
+0$
+01
+1/
+0C
+0:
+b1 O
+b1 W
+b110 >
+b110 F
+b110 M
+b110 p
+b110 c
+b110 e
+b11 D
+b11 a
+00
+0.
+1#
+05
+b101 d
+b101 f
+b101 g
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+0i
+b110 I
+b110 L
+b110 H
+b110 K
+b110 G
+b110 J
+1%
+#280000
+0%
+#285000
+b101 >
+b101 F
+b101 M
+b101 p
+b101 I
+b101 L
+b101 H
+b101 K
+b101 G
+b101 J
+0j
+b100 d
+b100 f
+b100 g
+1%
+#290000
+0%
+#295000
+b100 >
+b100 F
+b100 M
+b100 p
+b11 d
+b11 f
+b11 g
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+1%
+#300000
+0%
+#305000
+b11 >
+b11 F
+b11 M
+b11 p
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+b10 d
+b10 f
+b10 g
+1%
+#310000
+0%
+#315000
+b10 >
+b10 F
+b10 M
+b10 p
+b1 d
+b1 f
+b1 g
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+1%
+#320000
+0%
+#325000
+b1 >
+b1 F
+b1 M
+b1 p
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+19
+b0 d
+b0 f
+b0 g
+1%
+#330000
+0%
+#335000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+10
+b1 N
+09
+b111 d
+b111 f
+b111 g
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+1%
+#340000
+0%
+#345000
+b11 c
+b11 e
+1h
+b110 d
+b110 f
+b110 g
+00
+1.
+0#
+1%
+#350000
+0%
+#355000
+11
+b10 S
+1:
+b101 d
+b101 f
+b101 g
+1i
+1%
+#360000
+0%
+#365000
+b110 2
+b110 E
+1"
+0/
+1B
+b11 S
+06
+08
+b11 >
+b11 F
+b11 M
+b11 p
+b10 O
+b10 W
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+1j
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+b100 d
+b100 f
+b100 g
+1%
+#370000
+0%
+#375000
+b11 2
+b11 E
+0"
+b0 S
+16
+1/
+0B
+b11 O
+b11 W
+b110 >
+b110 F
+b110 M
+b110 p
+b11 d
+b11 f
+b11 g
+b11 R
+b11 V
+b11 Q
+b11 U
+b11 P
+b11 T
+0h
+b110 I
+b110 L
+b110 H
+b110 K
+b110 G
+b110 J
+1%
+#380000
+0%
+#385000
+b110 2
+b110 E
+1$
+06
+01
+0/
+1C
+0:
+b0 O
+b0 W
+b11 >
+b11 F
+b11 M
+b11 p
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+0i
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+b11 n
+b10 d
+b10 f
+b10 g
+1%
+#390000
+0%
+#395000
+b10 >
+b10 F
+b10 M
+b10 p
+b1 d
+b1 f
+b1 g
+0j
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+1%
+#400000
+0%
+#405000
+b1 >
+b1 F
+b1 M
+b1 p
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+19
+b0 d
+b0 f
+b0 g
+1%
+#410000
+0%
+#415000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+10
+b10 N
+09
+b111 d
+b111 f
+b111 g
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+1%
+#420000
+0%
+#425000
+b110 c
+b110 e
+1h
+b11 d
+b11 f
+b11 g
+00
+0.
+1!
+1%
+#430000
+0%
+#435000
+11
+b1 S
+1:
+b10 d
+b10 f
+b10 g
+1i
+1%
+#440000
+0%
+#445000
+b11 2
+b11 E
+0$
+b10 S
+1/
+0C
+08
+b110 >
+b110 F
+b110 M
+b110 p
+b1 O
+b1 W
+b110 I
+b110 L
+b110 H
+b110 K
+b110 G
+b110 J
+1j
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+b1 d
+b1 f
+b1 g
+1%
+#450000
+0%
+#455000
+b110 2
+b110 E
+1"
+0/
+1B
+b11 S
+06
+b10 O
+b10 W
+b11 >
+b11 F
+b11 M
+b11 p
+19
+b0 d
+b0 f
+b0 g
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+0h
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+1%
+#460000
+0%
+#465000
+01
+b11 2
+b11 E
+0"
+0:
+b11 S
+06
+1/
+0B
+b110 >
+b110 F
+b110 M
+b110 p
+b11 O
+b11 W
+b110 I
+b110 L
+b110 H
+b110 K
+b110 G
+b110 J
+0i
+b11 R
+b11 V
+b11 Q
+b11 U
+b11 P
+b11 T
+09
+b111 d
+b111 f
+b111 g
+10
+b11 N
+1%
+#470000
+0%
+#475000
+b101 >
+b101 F
+b101 M
+b101 p
+b11 c
+b11 e
+00
+1.
+0!
+b110 d
+b110 f
+b110 g
+0j
+b101 I
+b101 L
+b101 H
+b101 K
+b101 G
+b101 J
+b1 )
+1%
+#477000
+b10 )
+#480000
+0%
+#485000
+b100 >
+b100 F
+b100 M
+b100 p
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+b101 d
+b101 f
+b101 g
+1%
+b1 &
+b1 +
+b1 X
+b1 '
+b1 ,
+b1 b
+#490000
+0%
+#495000
+b11 >
+b11 F
+b11 M
+b11 p
+b100 d
+b100 f
+b100 g
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+1%
+#500000
+0%
+#505000
+b10 >
+b10 F
+b10 M
+b10 p
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+b11 d
+b11 f
+b11 g
+1%
+#510000
+0%
+#515000
+b1 >
+b1 F
+b1 M
+b1 p
+b10 d
+b10 f
+b10 g
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+1%
+#520000
+0%
+#525000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+b1 d
+b1 f
+b1 g
+1%
+#530000
+0%
+#535000
+19
+b0 d
+b0 f
+b0 g
+1h
+1%
+#540000
+0%
+#545000
+16
+11
+b0 S
+1:
+1i
+09
+b111 d
+b111 f
+b111 g
+15
+10
+b0 N
+1%
+#550000
+0%
+#555000
+b1 2
+b1 E
+1$
+b1 ;
+b1 S
+06
+0/
+1C
+b0 O
+b0 W
+b1 -
+b1 =
+b1 Y
+b1 `
+08
+b11 >
+b11 F
+b11 M
+b11 p
+b1 c
+b1 e
+b1 D
+b1 a
+00
+0.
+1#
+05
+b11 d
+b11 f
+b11 g
+b100 n
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+1j
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+b1 \
+b1 _
+b1 [
+b1 ^
+b1 Z
+b1 ]
+1%
+#560000
+0%
+#565000
+0$
+b1 >
+b1 F
+b1 M
+b1 p
+b10 S
+1/
+0C
+b1 O
+b1 W
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+0h
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+b10 d
+b10 f
+b10 g
+1%
+#570000
+0%
+#575000
+1"
+0/
+1B
+b10 S
+01
+0:
+b10 O
+b10 W
+b1 d
+b1 f
+b1 g
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+0i
+1%
+#580000
+0%
+#585000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+0j
+19
+b0 d
+b0 f
+b0 g
+1%
+#590000
+0%
+#595000
+10
+b1 N
+09
+b111 d
+b111 f
+b111 g
+1h
+1%
+#600000
+0%
+#605000
+11
+b11 S
+1:
+1i
+b1 d
+b1 f
+b1 g
+00
+1.
+0#
+1%
+#610000
+0%
+#615000
+0"
+b0 S
+16
+1/
+0B
+b11 O
+b11 W
+08
+b1 >
+b1 F
+b1 M
+b1 p
+19
+b0 d
+b0 f
+b0 g
+b11 R
+b11 V
+b11 Q
+b11 U
+b11 P
+b11 T
+1j
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+1%
+#620000
+0%
+#625000
+1$
+b1 S
+06
+0/
+1C
+b0 O
+b0 W
+0h
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+b101 n
+09
+b111 d
+b111 f
+b111 g
+10
+b10 N
+b11 )
+1%
+#630000
+0%
+#635000
+0$
+01
+1/
+0C
+0:
+b1 O
+b1 W
+00
+0.
+1!
+b1 d
+b1 f
+b1 g
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+0i
+1%
+#640000
+0%
+#645000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+0j
+19
+b0 d
+b0 f
+b0 g
+1%
+#650000
+0%
+#655000
+10
+b11 N
+09
+b111 d
+b111 f
+b111 g
+1h
+1%
+#660000
+0%
+#665000
+11
+b10 S
+1:
+1i
+b1 d
+b1 f
+b1 g
+00
+1.
+0!
+1%
+#670000
+0%
+#675000
+b11 S
+b10 O
+b10 W
+08
+b1 >
+b1 F
+b1 M
+b1 p
+19
+b0 d
+b0 f
+b0 g
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+1j
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+0/
+0A
+1(
+b100 )
+1%
+#680000
+0%
+#685000
+b101 ;
+b0 S
+b0 O
+b0 W
+b101 -
+b101 =
+b101 Y
+b101 `
+0:
+b101 \
+b101 _
+b101 [
+b101 ^
+b101 Z
+b101 ]
+0j
+0i
+0h
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+b0 n
+09
+b111 d
+b111 f
+b111 g
+0.
+10
+0@
+b0 N
+b101 D
+b101 a
+1%
+#690000
+0%
+#695000
+b1 d
+b1 f
+b1 g
+1%
+#700000
+0%
+#705000
+00
+1@
+1#
+1$
+b100 2
+b100 E
+b100 c
+b100 e
+01
+1A
+1C
+b100 &
+b100 +
+b100 X
+b100 '
+b100 ,
+b100 b
+0(
+1%
+#710000
+0%
+#715000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+19
+b0 d
+b0 f
+b0 g
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+1%
+#720000
+0%
+#725000
+1h
+09
+b111 d
+b111 f
+b111 g
+10
+b1 N
+1%
+#730000
+0%
+#735000
+11
+b1 S
+1:
+b101 c
+b101 e
+00
+1.
+0#
+b100 d
+b100 f
+b100 g
+1i
+1%
+#740000
+0%
+#745000
+b101 2
+b101 E
+0$
+b10 S
+1/
+0C
+08
+b100 >
+b100 F
+b100 M
+b100 p
+b1 O
+b1 W
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+1j
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+b11 d
+b11 f
+b11 g
+1%
+#750000
+0%
+#755000
+b100 2
+b100 E
+1"
+0/
+1B
+b11 S
+06
+b10 O
+b10 W
+b101 >
+b101 F
+b101 M
+b101 p
+b10 d
+b10 f
+b10 g
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+0h
+b101 I
+b101 L
+b101 H
+b101 K
+b101 G
+b101 J
+1%
+#760000
+0%
+#765000
+01
+b101 2
+b101 E
+0"
+b100 >
+b100 F
+b100 M
+b100 p
+0:
+b11 S
+06
+1/
+0B
+b11 O
+b11 W
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+0i
+b11 R
+b11 V
+b11 Q
+b11 U
+b11 P
+b11 T
+b1 d
+b1 f
+b1 g
+1%
+#770000
+0%
+#775000
+b11 >
+b11 F
+b11 M
+b11 p
+19
+b0 d
+b0 f
+b0 g
+0j
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+1%
+#780000
+0%
+#785000
+b10 >
+b10 F
+b10 M
+b10 p
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+09
+b111 d
+b111 f
+b111 g
+10
+b10 N
+1%
+#790000
+0%
+#795000
+b1 >
+b1 F
+b1 M
+b1 p
+b100 c
+b100 e
+00
+0.
+1!
+b101 d
+b101 f
+b101 g
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+1%
+#800000
+0%
+#805000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+b100 d
+b100 f
+b100 g
+1%
+#810000
+0%
+#815000
+b11 d
+b11 f
+b11 g
+1h
+1%
+#820000
+0%
+#825000
+16
+11
+b0 S
+1:
+1i
+b10 d
+b10 f
+b10 g
+1%
+#830000
+0%
+#835000
+b100 2
+b100 E
+1$
+b100 ;
+b1 S
+06
+0/
+1C
+b0 O
+b0 W
+b100 -
+b100 =
+b100 Y
+b100 `
+08
+b101 >
+b101 F
+b101 M
+b101 p
+b1 d
+b1 f
+b1 g
+b1 n
+b0 R
+b0 V
+b0 Q
+b0 U
+b0 P
+b0 T
+1j
+b101 I
+b101 L
+b101 H
+b101 K
+b101 G
+b101 J
+b100 \
+b100 _
+b100 [
+b100 ^
+b100 Z
+b100 ]
+1%
+#840000
+0%
+#845000
+0$
+b100 >
+b100 F
+b100 M
+b100 p
+b10 S
+1/
+0C
+b1 O
+b1 W
+b100 I
+b100 L
+b100 H
+b100 K
+b100 G
+b100 J
+0h
+b1 R
+b1 V
+b1 Q
+b1 U
+b1 P
+b1 T
+19
+b0 d
+b0 f
+b0 g
+1%
+#850000
+0%
+#855000
+1"
+0/
+1B
+b10 S
+01
+0:
+b10 O
+b10 W
+10
+b11 N
+09
+b111 d
+b111 f
+b111 g
+b10 R
+b10 V
+b10 Q
+b10 U
+b10 P
+b10 T
+0i
+1%
+#860000
+0%
+#865000
+b11 >
+b11 F
+b11 M
+b11 p
+b101 c
+b101 e
+b11 I
+b11 L
+b11 H
+b11 K
+b11 G
+b11 J
+0j
+b100 d
+b100 f
+b100 g
+00
+1.
+0!
+1%
+#870000
+0%
+#875000
+b10 >
+b10 F
+b10 M
+b10 p
+b11 d
+b11 f
+b11 g
+b10 I
+b10 L
+b10 H
+b10 K
+b10 G
+b10 J
+1%
+#880000
+0%
+#885000
+b1 >
+b1 F
+b1 M
+b1 p
+b1 I
+b1 L
+b1 H
+b1 K
+b1 G
+b1 J
+b10 d
+b10 f
+b10 g
+1%
+#890000
+0%
+#895000
+18
+b0 >
+b0 F
+b0 M
+b0 p
+b1 d
+b1 f
+b1 g
+b0 I
+b0 L
+b0 H
+b0 K
+b0 G
+b0 J
+1%
+#900000
+0%
+#905000
+1h
+19
+b0 d
+b0 f
+b0 g
+1%
