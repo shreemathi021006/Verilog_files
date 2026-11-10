@@ -4,7 +4,7 @@ Verilog designs for a single-cycle RISC-V processor, a fault-tolerant PWM genera
 
 | Project | What it is |
 | --- | --- |
-| [Single-cycle RV32I CPU](#1-single-cycle-rv32i-risc-v-cpu) | One-instruction-per-cycle RISC-V core for e-Yantra Logic Quest Task 1C |
+| [Single-cycle RV32I CPU](#1-single-cycle-rv32i-risc-v-cpu) | One-instruction-per-cycle RISC-V core  |
 | [Fault-tolerant PWM generator](#2-fault-tolerant-multi-layer-pwm-generator) | Complementary PWM with dynamic dead time and four hardware protection layers. 1st place, Ohmegahack 2026 |
 | [GCD module](#3-gcd-module) | Euclidean GCD in an FSM plus datapath, simulated with Icarus Verilog |
 
@@ -12,9 +12,8 @@ Verilog designs for a single-cycle RISC-V processor, a fault-tolerant PWM genera
 
 ## 1. Single-cycle RV32I RISC-V CPU
 
-A **single-cycle 32-bit RISC-V (RV32I)** processor for **e-Yantra Logic Quest, Task 1C** (team `lq_2062`).
-
-The core fetches one instruction per clock, decodes it, executes it in the ALU, and writes the result back in the same cycle. Instruction and data memories sit beside the processor in the top-level module `t1_riscv_cpu`.
+A **single-cycle 32-bit RISC-V (RV32I)** processor 
+The core fetches one instruction per clock, decodes it, executes it in the ALU, and writes the result back in the same cycle. Instruction and data memories sit beside the processor in the top-level module `riscv_cpu`.
 
 Target device in the Quartus project: **Cyclone IV E (EP4CE22F17C6)**.
 
@@ -35,7 +34,7 @@ Loads sign- or zero-extend the addressed byte or half-word. Stores do a read-mod
 ### Design
 
 ```
-t1_riscv_cpu
+riscv_cpu
 ├── riscv_cpu
 │   ├── controller
 │   │   ├── main_decoder    opcode → control signals
@@ -56,40 +55,25 @@ t1_riscv_cpu
 ### Layout
 
 ```
-t1_riscv_cpu/
+riscv_cpu/
 ├── code/                   RTL
-│   ├── t1_riscv_cpu.v      top module
+│   ├── riscv_cpu.v      top module
 │   ├── riscv_cpu.v
 │   ├── instr_mem.v
 │   ├── data_mem.v
 │   ├── components/         ALU, decoder, datapath, register file, muxes
-│   ├── rv32i_test_1c.s     Task 1C assembly test
-│   └── rv32i_test_1c.hex   machine code loaded by instr_mem
+│   ├── rv32i.s     Task 1C assembly test
+│   └── rv32i.hex   machine code loaded by instr_mem
 ├── .test/                  ModelSim testbenches (tb_1b.v, tb_1c.v)
-├── t1_riscv_cpu.qpf        Quartus project
-└── t1_riscv_cpu.qsf        device and file assignments
+├── riscv_cpu.qpf        Quartus project
+└── riscv_cpu.qsf        device and file assignments
 ```
 
-`instr_mem` reads `rv32i_test_1c.hex` at simulation start. Swap the `$readmemh` path in `code/instr_mem.v` to load `rv32i_test_1b.hex` or `rv32i_book.hex` instead.
+`instr_mem` reads `rv32i_test_1c.hex` at simulation start. 
 
 Quartus and ModelSim also write `db/`, `incremental_db/`, `output_files/`, and `simulation/`. Those folders are generated and do not need to be committed.
 
-### How to run
 
-1. Open `t1_riscv_cpu/t1_riscv_cpu.qpf` in **Intel Quartus Prime**.
-2. Set the simulation tool to **ModelSim-Altera** (Tools → Options → EDA Tool Options) if it is not already.
-3. Run **RTL Simulation** (Tools → Run Simulation Tool → RTL Simulation).
-4. In the ModelSim transcript, compile and run `tb_1c`:
-
-```tcl
-do t1_riscv_cpu_run_msim_rtl_verilog.do
-```
-
-The testbench steps through `rv32i_test_1c.s` and prints whether each instruction produced the expected result. A clean run ends with `No Faults`.
-
-**Tools:** Intel Quartus Prime (Cyclone IV E), ModelSim-Altera, Verilog HDL.
-
----
 
 ## 2. Fault-tolerant multi-layer PWM generator
 
