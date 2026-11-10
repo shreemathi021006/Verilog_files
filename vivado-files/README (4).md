@@ -31,6 +31,8 @@ Full hardware list, pin map and setup steps are in the [charger-hmi repository](
 ### Prototype photo
 
 ![HMI-based smart charger prototype with display and Select, Enter, Inc, Dec buttons](images/hmi-charger-prototype.jpg)
+<img width="388" height="678" alt="image" src="https://github.com/user-attachments/assets/f293d518-94c9-4889-ae90-6b97f3e600dd" />
+
 
 *The working prototype: a display and four buttons (Select, Enter, Inc, Dec) in a paper-covered enclosure, placed inline between the charger and the device.*
 ![alt text](image.png)
