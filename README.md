@@ -1,58 +1,82 @@
-# Verilog Files
+# Single-Cycle RV32I RISC-V CPU
 
-A collection of digital design projects in Verilog HDL, spanning RTL design,
-simulation (Icarus Verilog + GTKWave), and FPGA implementation (Xilinx Vivado).
+Verilog implementation of a **single-cycle 32-bit RISC-V (RV32I)** processor for **e-Yantra Logic Quest, Task 1C** (team `lq_2062`).
 
-## Projects
+The core fetches one instruction per clock, decodes it, executes it in the ALU, and writes the result back in the same cycle. Instruction and data memories sit beside the processor in the top-level module `t1_riscv_cpu`.
 
-### [`gcd-module-in-verilog/`](./gcd-module-in-verilog)
-A GCD (Greatest Common Divisor) computation module — classic datapath + FSM
-design, simulated with Icarus Verilog and GTKWave.
+Target device in the Quartus project: **Cyclone IV E (EP4CE22F17C6)**.
 
-- **Datapath:** registers A & B, mux, comparator, subtractor
-- **FSM:** 6-state controller (`S0`–`S5`) that loads inputs, compares A and
-  B, subtracts the smaller from the larger, and repeats until A = B
-- Includes the design flowchart, synthesized schematic screenshots, and a
-  saved GTKWave waveform (`waveform.gtkw`)
+## Supported instructions
 
-**Run it:**
-```bash
-cd gcd-module-in-verilog
-iverilog -o tb-of.vvp pipo.v mux.v sub.v comp.v data_path.v fsm.v tb.v
-vvp tb-of.vvp
-gtkwave tb.vcd
+| Group | Instructions |
+| --- | --- |
+| I-type ALU | `addi`, `slti`, `sltiu`, `xori`, `ori`, `andi`, `slli`, `srli`, `srai` |
+| R-type | `add`, `sub`, `sll`, `slt`, `sltu`, `xor`, `srl`, `sra`, `or`, `and` |
+| Upper immediate | `lui`, `auipc` |
+| Loads | `lb`, `lh`, `lw`, `lbu`, `lhu` |
+| Stores | `sb`, `sh`, `sw` |
+| Branches | `beq`, `bne`, `blt`, `bge`, `bltu`, `bgeu` |
+| Jumps | `jal`, `jalr` |
+
+Loads sign- or zero-extend the addressed byte or half-word. Stores do a read-modify-write on the word so `sb` and `sh` only update the selected bytes.
+
+## Design
+
+```
+t1_riscv_cpu
+├── riscv_cpu
+│   ├── controller
+│   │   ├── main_decoder    opcode → control signals
+│   │   └── alu_decoder     funct3 / funct7 → ALU operation
+│   └── datapath
+│       ├── PC + adders + PC mux (sequential, branch, jalr)
+│       ├── register file (x0 hardwired to 0)
+│       ├── immediate extender
+│       └── ALU
+├── instr_mem               512 words, loaded from a .hex file
+└── data_mem                64 words, synchronous write
 ```
 
-### [`vivado-files/`](./vivado-files)
-Verilog projects built and simulated in Xilinx Vivado.
-
-- **Half Adder** (`Adder/half adder/`) — basic combinational half adder with
-  testbench
-- **AHB-to-APB Bridge** (`ahb to apb bridge/`) — an `AHB_slave_interface`
-  and `APB_controller` bridged together (`Top.v` / `bridge_wrapper.v`),
-  built as part of a design internship; internship reports (PDF) included
-
-**Run it:** open the relevant `.xpr` file in Vivado, or open the `.srcs`
-folder to browse the source and testbench files directly.
+- **PC next:** `PC+4`, `PC+immediate` (branch / `jal`), or `rs1+immediate` (`jalr`).
+- **ALU operand A:** register (`rs1`), `PC` (`auipc`), or `0` (`lui`).
+- **Result writeback:** ALU result, extended load data, or `PC+4` (link address for jumps).
 
 ## Repository layout
 
-## Projects
+```
+t1_riscv_cpu/
+├── code/                   RTL (this is the design)
+│   ├── t1_riscv_cpu.v      top module
+│   ├── riscv_cpu.v
+│   ├── instr_mem.v
+│   ├── data_mem.v
+│   ├── components/         ALU, decoder, datapath, register file, muxes
+│   ├── rv32i_test_1c.s     Task 1C assembly test
+│   └── rv32i_test_1c.hex   machine code loaded by instr_mem
+├── .test/                  ModelSim testbenches (tb_1b.v, tb_1c.v)
+├── t1_riscv_cpu.qpf        Quartus project
+└── t1_riscv_cpu.qsf        device and file assignments
+```
 
-### [`Ohmegahack-PWM-FaultTolerant/`](./Ohmegahack-PWM-FaultTolerant)
-🏆 **1st Place — Ohmegahack: Design, Innovate, Tapeout** (ICSD × TechnoVIT ×
-IEEE CEDA Madras Section, VIT Chennai)
+`instr_mem` reads `rv32i_test_1c.hex` at simulation start. Swap the `$readmemh` path in `code/instr_mem.v` to load `rv32i_test_1b.hex` or `rv32i_book.hex` instead.
 
-A 4-layer fault-tolerant PWM generator with dynamic dead-time control —
-built to guarantee zero shoot-through on a motor driver's complementary
-outputs even under bit-flips, glitches, and thermal drift. Includes the
-original unprotected baseline design alongside the protected version, full
-verification results, a Vivado DRC report, and the architecture write-up.
+Quartus and ModelSim also write `db/`, `incremental_db/`, `output_files/`, and `simulation/`. Those are generated and do not need to be committed.
 
-- **Baseline:** simple FSM-driven PWM with a fixed, updatable dead time
-- **Protected:** adds Triple Modular Redundancy, a glitch filter, a
-  self-correcting dead-time margin, and a combinational hard-override gate
-- See its own [README](./Ohmegahack-PWM-FaultTolerant/README.md) for the
-  full breakdown, simulation instructions, and results
+## Simulate
 
+1. Open `t1_riscv_cpu/t1_riscv_cpu.qpf` in **Intel Quartus Prime**.
+2. Set the simulation tool to **ModelSim-Altera** (Tools → Options → EDA Tool Options) if it is not already.
+3. Run **RTL Simulation** (Tools → Run Simulation Tool → RTL Simulation).
+4. In the ModelSim transcript, compile and run `tb_1c`:
 
+```tcl
+do t1_riscv_cpu_run_msim_rtl_verilog.do
+```
+
+The testbench steps through the program in `rv32i_test_1c.s` and prints whether each instruction produced the expected result. A clean run ends with `No Faults`.
+
+## Tools
+
+- Intel Quartus Prime (Cyclone IV E)
+- ModelSim-Altera
+- Verilog HDL

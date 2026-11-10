@@ -1,0 +1,395 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/simulation/modelsim
+vadder
+Z1 !s110 1789898917
+!i10b 1
+!s100 jXE67fZjiCj2W4l?`i:H?0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOAfmSa7ildzB3UUiGDO:Z3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1789898797
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/adder.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/adder.v
+!i122 13
+L0 4 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1789898917.000000
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/adder.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components}
+Z9 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 ge81J1fD86ZSRI_@Ndo5e3
+R2
+IWmj<7[_FbIFk1KIfn2eC<0
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu.v
+!i122 12
+L0 3 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu.v|
+!i113 1
+R7
+R8
+R9
+valu_decoder
+R1
+!i10b 1
+!s100 b=gnOlBVaKizIfOae;_?e3
+R2
+II2V<J71jKUinSihia=5Pa3
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu_decoder.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu_decoder.v
+!i122 11
+L0 3 39
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/alu_decoder.v|
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+!i10b 1
+!s100 Im1_YBLP:?=Y=DVX_oA9H1
+R2
+IUNY=P_>XX9MPJYWT2N3F<3
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/controller.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/controller.v
+!i122 10
+L0 3 30
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/controller.v|
+!i113 1
+R7
+R8
+R9
+vdata_mem
+Z10 !s110 1789898916
+!i10b 1
+!s100 _^e]JLL9HN_``4^[2XCYF3
+R2
+IS3S7:@C9OAd=V[ejkVPB23
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/data_mem.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/data_mem.v
+!i122 2
+Z11 L0 4 19
+R5
+r1
+!s85 0
+31
+Z12 !s108 1789898916.000000
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/data_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/data_mem.v|
+!i113 1
+R7
+Z13 !s92 -vlog01compat -work work {+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code}
+R9
+vdatapath
+R1
+!i10b 1
+!s100 [ARF?hVk308C=f??3]TZI2
+R2
+IV]LZCX<8=Yj^K7DfcT2Vj3
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/datapath.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/datapath.v
+!i122 9
+L0 2 64
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/datapath.v|
+!i113 1
+R7
+R8
+R9
+vimm_extend
+R1
+!i10b 1
+!s100 0OR;3NBPWhPm8ZY6D357c2
+R2
+IQ8AeEhHGABFYLoLboVGD]1
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/imm_extend.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/imm_extend.v
+!i122 8
+L0 3 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/imm_extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/imm_extend.v|
+!i113 1
+R7
+R8
+R9
+vinstr_mem
+R1
+!i10b 1
+!s100 Og<7TIc_TlFM_QN]j;mZm3
+R2
+IAalN:C1N_Y]3a4QLUDfm02
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/instr_mem.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/instr_mem.v
+!i122 14
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/instr_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/instr_mem.v|
+!i113 1
+R7
+R13
+R9
+vmain_decoder
+R1
+!i10b 1
+!s100 @O8@IQVmbEMU3mBjh?f4;0
+R2
+IUR>>LOTGSo0EO82Nz[8hW1
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/main_decoder.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/main_decoder.v
+!i122 7
+L0 3 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/main_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/main_decoder.v|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+!i10b 1
+!s100 O<Ld`3jD6QL?6PIEe_QAk1
+R2
+ILJSbQSDZcQ@=G4gK7i[aR3
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux2.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux2.v
+!i122 6
+Z14 L0 4 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux2.v|
+!i113 1
+R7
+R8
+R9
+vmux3
+R10
+!i10b 1
+!s100 fShz_RzH66YN6G@4dH?@Y3
+R2
+IFGJGL[aJQIRRf9SL_Am0T1
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux3.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux3.v
+!i122 5
+R14
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/mux3.v|
+!i113 1
+R7
+R8
+R9
+vreg_file
+R10
+!i10b 1
+!s100 z2]InGk0[gjzdlc7_WWYI1
+R2
+I:RUHTndYz_TGijcenOK753
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reg_file.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reg_file.v
+!i122 4
+L0 8 27
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reg_file.v|
+!i113 1
+R7
+R8
+R9
+vreset_ff
+R10
+!i10b 1
+!s100 c1I5T0L8]]ZK0dn2hg0_F0
+R2
+IR9PIKPoBNd7;7fEYGzoz?3
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reset_ff.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reset_ff.v
+!i122 3
+L0 4 12
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reset_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/components/reset_ff.v|
+!i113 1
+R7
+R8
+R9
+vriscv_cpu
+R10
+!i10b 1
+!s100 fYn[m>fhU>T3JXJ:jOQLF3
+R2
+INiHd`?2hNc0BEaEEPW@nz2
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/riscv_cpu.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/riscv_cpu.v
+!i122 1
+L0 3 24
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/riscv_cpu.v|
+!i113 1
+R7
+R13
+R9
+vt1_riscv_cpu
+R10
+!i10b 1
+!s100 QQQPZ2A?=2?6M`zo5EgJG3
+R2
+IHdSl]T34bQF8VQ6hFXUG?0
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/t1_riscv_cpu.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/t1_riscv_cpu.v
+!i122 0
+L0 3 36
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/t1_riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/code/t1_riscv_cpu.v|
+!i113 1
+R7
+R13
+R9
+vtb_1c
+!s110 1789898918
+!i10b 1
+!s100 ?f;S0EQ;D=AAAMZhLO8GU0
+R2
+Ij8>cOHE2G21:c=I3QFBM]0
+R3
+R0
+R4
+8C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/.test/tb_1c.v
+FC:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/.test/tb_1c.v
+!i122 15
+L0 3 535
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/.test/tb_1c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/.test|C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/.test/tb_1c.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work {+incdir+C:/Users/mshre/Downloads/t1_riscv_cpu (1)/t1_riscv_cpu/.test}
+R9
